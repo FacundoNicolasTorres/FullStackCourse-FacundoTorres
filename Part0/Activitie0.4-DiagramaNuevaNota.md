@@ -28,7 +28,7 @@ sequenceDiagram;
 
     Note right of browser: The browser executes the callback function that renders the notes;
 ```
-##Activitie0.4
+## Activitie0.4
 ### Crea un diagrama similar que describa la situación en la que el usuario crea una nueva nota en la página https://studies.cs.helsinki.fi/exampleapp/notes escribiendo algo en el campo de texto y haciendo clic en el botón Save.
 
 ```mermaid
@@ -59,5 +59,8 @@ sequenceDiagram;
 
     browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json;
     activate server;
-    server-->>browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ];
+    server-->>browser: [{ "content": "I Love Empanadas", "date": "2025-05-27" }, ... ];
     deactivate server;
+
+    Note right of browser: The browser executes the callback function that renders the notes
+```
