@@ -7,12 +7,12 @@ sequenceDiagram;
     participant browser;
     participant server;
 
-    Note right of Browser: User writes a new note and submits the form;
+    Note right of browser: User writes a new note and submits the form;
 
     browser->>server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa;
     activate server;
     server-->>browser: HTTP Status Code 201;
     deactivate server;
 
-    Note right of Browser: No page reload;
+    Note right of browser: No page reload;
 ```
